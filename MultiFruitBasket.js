@@ -11,8 +11,17 @@ module.exports = (pool) => {
         var result = await pool.query('select fruit_name,price,quantity from fruit_basket_item ')
         return result.rows
     }
+
+    //add fruits to an existing basket
+    let addToExistingBasket=async(name)=>{
+        var result = await pool.query('insert into multi_fruit_basket(name) values($1)',[name] );
+        return result.rows
+    }
+    
+
     return{
         createBasket,
-        getAllBaskets
+        getAllBaskets,
+        addToExistingBasket
     }
 }

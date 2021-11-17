@@ -50,7 +50,8 @@ assert.deepEqual(
       }
     ],await multiFruity.getAllBaskets())
 
-})
+});
+
 after(()=>{
     pool.end();
 })
