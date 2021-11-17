@@ -1,0 +1,15 @@
+{
+  "name": "MultiFruitBasket",
+  "version": "1.0.0",
+  "description": "Multiple fruits in a basket\r The fruit basket business is booming. And customers now want fruit baskets with more than one fruit in it. Baskets now also needs a name to differentiate them from each other.",
+  "main": "MultiFruitBasket.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
+}
