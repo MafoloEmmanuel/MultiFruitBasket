@@ -1,6 +1,6 @@
 const { Pool } = require('pg');
 const assert = require('assert')
-const MultiFruitBasket = require('./MultiFruitBasket')
+const MultiFruitBasket = require('../MultiFruitBasket')
 
 let useSSL = false;
 let local = process.env.LOCAL || false;
