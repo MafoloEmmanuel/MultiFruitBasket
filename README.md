@@ -1,11 +1,14 @@
 Multiple fruits in a basket
-The fruit basket business is booming. And customers now want fruit baskets with more than one fruit in it. Baskets now also needs a name to differentiate them from each other.
 
+
+The fruit basket business is booming. And customers now want fruit baskets with more than one fruit in it. Baskets now also needs a name to differentiate them from each other.
+c
 Create a new table called fruit_basket_item that contains:
 
 1 type of fruit,
 a quantity of fruit
 and the unit price per fruit.
+
 Create a new table called multi_fruit_basket it should have an id and a name column.
 
 The fruit_basket_item table should have a multi_fruit_basket_id column that should be a foreign key to the id column in the multi_fruit_basket table.
@@ -19,4 +22,6 @@ for a given id return the basket_name & id as well as a list of all the fruits i
 return the total cost of a specific basket:
 based on basket name
 and on the basket id
+
+
 Create tests for your function and deploy your tests to Travis.
