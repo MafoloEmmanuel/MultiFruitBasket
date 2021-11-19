@@ -55,6 +55,7 @@ return result.rows
 */
 let getAllBasketTotals = async()=>{
     var result = await pool.query(' select m.id,m.name ,sum(f.price*f.quantity) from multi_fruit_basket m join fruit_basket_item f on m.id=f.multi_id group by m.id');
+  console.log(result.rows)
     return result.rows
 }
 

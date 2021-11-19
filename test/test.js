@@ -148,31 +148,11 @@ describe('Multi fruit basket', () => {
     
     assert.deepEqual(
       [
-        {
-          id: 25,
-          name: 'Red Apples',
-          sum: '37.50'
-        },
-        {
-          
-          id: 41,
-          name: 'Yellow Bananas',
-          sum: '20.00'
-        },
-        {
-          id: 62,
-          name: 'Orange Oranges',
-          sum: '60.00'
-        },
-        {
-          id: 45,
-          name: 'Green Pears',
-          sum: '152.00'
-        },
-        
-        
-        
-       
+        { id: 41, name: 'Yellow Bananas', sum: '20.00' },
+        { id: 62, name: 'Orange Oranges', sum: '60.00' },
+        { id: 25, name: 'Red Apples', sum: '37.50' },
+        { id: 45, name: 'Green Pears', sum: '152.00' }
+      
       ], await multiFruity.getAllBasketTotals('Apples') )
   });
 
