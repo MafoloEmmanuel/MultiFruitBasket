@@ -17,7 +17,7 @@ pool.on('connect', () => {
 });
 describe('Multi fruit basket', () => {
   let multiFruity = MultiFruitBasket(pool)
-  beforeEach(async () => {
+  beforeEach(async() => {
     await pool.query('delete from fruit_basket_item');
     await pool.query('delete from multi_fruit_basket');
 

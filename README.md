@@ -1,5 +1,6 @@
 Multiple fruits in a basket
 
+[![Build Status](https://app.travis-ci.com/MafoloEmmanuel/MultiFruitBasket.svg?branch=master)](https://app.travis-ci.com/MafoloEmmanuel/MultiFruitBasket)
 
 The fruit basket business is booming. And customers now want fruit baskets with more than one fruit in it. Baskets now also needs a name to differentiate them from each other.
 
