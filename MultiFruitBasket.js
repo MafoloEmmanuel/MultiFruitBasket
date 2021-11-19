@@ -25,7 +25,6 @@ module.exports = (pool) => {
 
     let getMultiBaskets = async () => {
         var result = await pool.query('select name from multi_fruit_basket')
-       console.log('Lovely')
         return result.rows
     }
 
