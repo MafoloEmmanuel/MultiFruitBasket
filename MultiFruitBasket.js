@@ -54,13 +54,13 @@ return result.rows
 ----> the basket id 
 */
 let getAllBasketTotals = async()=>{
-    var result = await pool.query(' select m.id,m.name ,sum(f.price*f.quantity) from multi_fruit_basket m join fruit_basket_item f on m.id=f.multi_id group by m.id');
+    var result = await pool.query(' select m.id,m.name ,sum(f.price*f.quantity) as basket_total from multi_fruit_basket m join fruit_basket_item f on m.id=f.multi_id group by m.id');
   console.log(result.rows)
     return result.rows
 }
 
 let getSpecificBasketTotal =async(type)=>{
-    var result = await pool.query(' select m.id,m.name ,sum(f.price*f.quantity) from multi_fruit_basket m join fruit_basket_item f on m.id=f.multi_id where f.fruit_name=$1 group by m.id',[type]);
+    var result = await pool.query(' select m.id,m.name ,sum(f.price*f.quantity) as basket_total from multi_fruit_basket m join fruit_basket_item f on m.id=f.multi_id where f.fruit_name=$1 group by m.id',[type]);
     return result.rows
 
 }
